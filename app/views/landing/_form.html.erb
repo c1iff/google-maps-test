@@ -1,5 +1,7 @@
-<%= form_tag landing_index_path, method: :post do %>
-  <%= label_tag "Enter place" %>
-  <%= text_field_tag :place %>
+<%= form_tag landing_index_path do %>
+  <%= label_tag "Enter origin" %>
+  <%= text_field_tag :origin %>
+  <%= label_tag "Enter destination" %>
+  <%= text_field_tag :destination %>
   <%= submit_tag %>
 <% end %>
