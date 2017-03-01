@@ -3,5 +3,11 @@
   <%= text_field_tag :origin %>
   <%= label_tag "Enter destination" %>
   <%= text_field_tag :destination %>
+  <%= label_tag "Enter a waypoint" %>
+  <%= text_field_tag :waypoint %>
+  <%= select_tag(:transit_method, options_for_select(['DRIVING', 'WALKING', 'BICYCLING']), class: 'form-control', id: 'contact-select') %>
+  <hr>
+  <%= label_tag "Enter place" %>
+  <%= text_field_tag :user_place %>
   <%= submit_tag %>
 <% end %>
